@@ -87,15 +87,24 @@ h6 {
 .btn {
 	display: block;
     text-align: center;
-    padding: 0 20px;
-    margin: 25px 0;
     border-radius: 100px;
+}
+.btn__large {
+	padding: 0 20px;
+    margin: 25px 0;
     line-height: 45px;
     background: var(--large-btn-color);
     color: var(--main-neutral-color);
     -webkit-box-shadow: 0px 0px 40px -8px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 0px 40px -8px rgba(0,0,0,0.75);
 	box-shadow: 0px 0px 40px -8px rgba(0,0,0,0.75);
+}
+.btn__small {
+	padding: 6px 0;
+	margin: 6px 0;
+	border: 1px solid var(--large-btn-color);
+	color: var(--large-btn-color);;
+	background: transparent;
 }
 .lang-btn {
 	margin: 0 5px 0 0;
