@@ -46,7 +46,7 @@ h6 {
 .panel__logo {
 	max-width: 250px;
 	width: 100%;
-	margin-bottom: 150px;
+	margin-bottom: 120px;
 }
 .panel__heading,
 .panel__list {
@@ -56,7 +56,7 @@ h6 {
 	margin-bottom: 15px;
 }
 .panel__list-item:last-of-type {
-	margin-bottom: 50px;
+	margin-bottom: 120px;
 }
 .main-content {	
 	background: var(--main-content-bg);
@@ -100,8 +100,8 @@ h6 {
 	box-shadow: 0px 0px 40px -8px rgba(0,0,0,0.75);
 }
 .btn__small {
-	padding: 6px 0;
-	margin: 6px 0;
+	padding: 6px 20px;
+	margin: 6px auto;
 	border: 1px solid var(--large-btn-color);
 	color: var(--large-btn-color);;
 	background: transparent;
@@ -119,7 +119,7 @@ h6 {
 }
 .lang-btn--active,
 .pagination__item--active,
-.panel__list-btn--active{
+.panel__list-btn--active {
 	color: var(--main-secondary-color);
 	font-weight: 700;
 }
@@ -147,5 +147,10 @@ h6 {
 	}
 	h6 {
 		font-size: 10px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.btn__small {
+		display: inline-block;
 	}
 }
