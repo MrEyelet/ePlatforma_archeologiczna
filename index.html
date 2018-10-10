@@ -1,17 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>ePlatforma Archeologiczna</title>
+	<link rel="stylesheet" type="text/css" href="styles/flex_grid.css">
+	<link rel="stylesheet" type="text/css" href="styles/general.css">
 	<link rel="stylesheet" type="text/css" href="styles/mayers_reset.css">
 	<link rel="stylesheet" type="text/css" href="styles/table-test.css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i|Poppins:400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,700,700i" rel="stylesheet">
+
 </head>
 <body>
-	<div class="outer-container">
-		<aside>
+	<div class="outer-container fx-container">
+		<aside class="panel">
 			<nav>
-				<img src="img/logo_archeologia.svg" alt="" title="">
+				<img class="panel__logo" src="img/logo_archeologia.svg" alt="" title="">
 				<!-- <div class="mobile-menu">
 
 				</div> -->
@@ -30,8 +34,8 @@
 				<li><img src="img/icons/ic_edit.svg" />Edytuj columny</li>
 			</ul>
 		</aside>
-		<main>
-			<header>
+		<main class="main-content">
+			<header class="main-content__head fx-container fx-space-between">
 				<span><img src="img/icons/ic_search.svg">Search</span>
 				<h1>Stanowiska archeologiczne</h1>
 				<span><a href="">PL</a> <a href="">EN</a> <a href="">DE</a></span>
@@ -130,7 +134,7 @@
     				</tbody>
 				</thead>
 			</table>
-			<div>
+			<div class="main-content__pagination">
 				<span><img src="img/icons/ic_chevron.svg"> Wstecz</span>
 				<span><a href="">1</a> <a href="">2</a> <a href="">3</a> ... <a href="">10</a></span>
 				<span>Dalej <img src="img/icons/ic_chevron.svg"></span>
