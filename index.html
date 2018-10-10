@@ -3,10 +3,12 @@
 <head>
 	<title>ePlatforma Archeologiczna</title>
 	<link rel="stylesheet" type="text/css" href="styles/mayers_reset.css">
+	<link rel="stylesheet" type="text/css" href="styles/table-test.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i|Poppins:400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<div class="container">
+	<div class="outer-container">
 		<aside>
 			<nav>
 				<img src="img/logo_archeologia.svg" alt="" title="">
@@ -34,9 +36,9 @@
 				<h1>Stanowiska archeologiczne</h1>
 				<span><a href="">PL</a> <a href="">EN</a> <a href="">DE</a></span>
 			</header>
-			<table>
-				<thead>
-				    <tr>
+			<table class="table">
+				<thead class="table__header">
+				    <tr class="table__row">
 				        <th>Nazwa stanowiska</th>
 				        <th>Województwo</th>
 				        <th>Powiat</th>
@@ -47,83 +49,83 @@
 				        <th>Nr stanowiska w obszarze AZP</th>
 				        <th>Szczegóły</th>
 				    </tr>
-				    <tbody>
-					    <tr>
-					        <td aria-label="Nazwa stanowiska">Nazwa 1</td>
-					        <td aria-label="Województwo">Lubuskie</td>
-					        <td aria-label="Powiat">Gorzowski</td>
-					        <td aria-label="Gmina">Bledzew</td>
-					        <td aria-label="Miasto">Babimost</td>
-					        <td aria-label="AZP">37 - 17</td>
-					        <td aria-label="Nr stanowiska w miejscowości">AZP-Babimost-40</td>
-					        <td aria-label="Nr stanowiska w obszarze AZP">AZP25</td>
-					        <td aria-label="Szczegóły"><a href="">Opis</a> <a href="">Mapa</a></td>
+				    <tbody class="table__body">
+					    <tr class="table__row">
+					        <td class="table__col" aria-label="Nazwa stanowiska">Nazwa 1</td>
+					        <td class="table__col" aria-label="Województwo">Lubuskie</td>
+					        <td class="table__col" aria-label="Powiat">Gorzowski</td>
+					        <td class="table__col" aria-label="Gmina">Bledzew</td>
+					        <td class="table__col" aria-label="Miasto">Babimost</td>
+					        <td class="table__col" aria-label="AZP">37 - 17</td>
+					        <td class="table__col" aria-label="Nr stanowiska w miejscowości">AZP-Babimost-40</td>
+					        <td class="table__col" aria-label="Nr stanowiska w obszarze AZP">AZP25</td>
+					        <td class="table__col" aria-label="Szczegóły"><a href="">Opis</a> <a href="">Mapa</a></td>
 					    </tr>
-					    <tr>
-					        <td aria-label="Nazwa stanowiska">Nazwa 2</td>
-					        <td aria-label="Województwo">Lubuskie</td>
-					        <td aria-label="Powiat">Słubkicki</td>
-					        <td aria-label="Gmina">Bobrowice</td>
-					        <td aria-label="Miasto">Baczyna</td>
-					        <td aria-label="AZP">37 -18</td>
-					        <td aria-label="Nr stanowiska w miejscowości">AZP-Bobrowice-41</td>
-					        <td aria-label="Nr stanowiska w obszarze AZP">AZP26</td>
-					        <td aria-label="Szczegóły"><a href="">Opis</a> <a href="">Mapa</a></td>
+					    <tr class="table__row">
+					        <td class="table__col" aria-label="Nazwa stanowiska">Nazwa 2</td>
+					        <td class="table__col" aria-label="Województwo">Lubuskie</td>
+					        <td class="table__col" aria-label="Powiat">Słubkicki</td>
+					        <td class="table__col" aria-label="Gmina">Bobrowice</td>
+					        <td class="table__col" aria-label="Miasto">Baczyna</td>
+					        <td class="table__col" aria-label="AZP">37 -18</td>
+					        <td class="table__col" aria-label="Nr stanowiska w miejscowości">AZP-Bobrowice-41</td>
+					        <td class="table__col" aria-label="Nr stanowiska w obszarze AZP">AZP26</td>
+					        <td class="table__col" aria-label="Szczegóły"><a href="">Opis</a> <a href="">Mapa</a></td>
 					    </tr>
-					    <tr>
-					        <td aria-label="Nazwa stanowiska">Nazwa 3</td>
-					        <td aria-label="Województwo">Lubuskie</td>
-					        <td aria-label="Powiat">Gorzowski</td>
-					        <td aria-label="Gmina">Bledzew</td>
-					        <td aria-label="Miasto">Babimost</td>
-					        <td aria-label="AZP">37 - 18</td>
-					        <td aria-label="Nr stanowiska w miejscowości">AZP-Babimost-42</td>
-					        <td aria-label="Nr stanowiska w obszarze AZP">AZP27</td>
-					        <td aria-label="Szczegóły"><a href="">Opis</a> <a href="">Mapa</a></td>
+					    <tr class="table__row">
+					        <td class="table__col" aria-label="Nazwa stanowiska">Nazwa 3</td>
+					        <td class="table__col" aria-label="Województwo">Lubuskie</td>
+					        <td class="table__col" aria-label="Powiat">Gorzowski</td>
+					        <td class="table__col" aria-label="Gmina">Bledzew</td>
+					        <td class="table__col" aria-label="Miasto">Babimost</td>
+					        <td class="table__col" aria-label="AZP">37 - 18</td>
+					        <td class="table__col" aria-label="Nr stanowiska w miejscowości">AZP-Babimost-42</td>
+					        <td class="table__col" aria-label="Nr stanowiska w obszarze AZP">AZP27</td>
+					        <td class="table__col" aria-label="Szczegóły"><a href="">Opis</a> <a href="">Mapa</a></td>
 					    </tr>
-					    <tr>
-					        <td aria-label="Nazwa stanowiska">Nazwa 4</td>
-					        <td aria-label="Województwo">Małopolskie</td>
-					        <td aria-label="Powiat">Krakowski</td>
-					        <td aria-label="Gmina">Kraków</td>
-					        <td aria-label="Miasto">Kraków</td>
-					        <td aria-label="AZP">40 - 01</td>
-					        <td aria-label="Nr stanowiska w miejscowości">AZP-Kraków-43</td>
-					        <td aria-label="Nr stanowiska w obszarze AZP">AZP28</td>
-					        <td aria-label="Szczegóły"><a href="">Opis</a> <a href="">Mapa</a></td>
+					    <tr class="table__row">
+					        <td class="table__col" aria-label="Nazwa stanowiska">Nazwa 4</td>
+					        <td class="table__col" aria-label="Województwo">Małopolskie</td>
+					        <td class="table__col" aria-label="Powiat">Krakowski</td>
+					        <td class="table__col" aria-label="Gmina">Kraków</td>
+					        <td class="table__col" aria-label="Miasto">Kraków</td>
+					        <td class="table__col" aria-label="AZP">40 - 01</td>
+					        <td class="table__col" aria-label="Nr stanowiska w miejscowości">AZP-Kraków-43</td>
+					        <td class="table__col" aria-label="Nr stanowiska w obszarze AZP">AZP28</td>
+					        <td class="table__col" aria-label="Szczegóły"><a href="">Opis</a> <a href="">Mapa</a></td>
 					    </tr>
-					    <tr>
-					        <td aria-label="Nazwa stanowiska">Nazwa 5</td>
-					        <td aria-label="Województwo">Małopolskie</td>
-					        <td aria-label="Powiat">Krakowski</td>
-					        <td aria-label="Gmina">Kraków</td>
-					        <td aria-label="Miasto">Kraków</td>
-					        <td aria-label="AZP">40 - 02</td>
-					        <td aria-label="Nr stanowiska w miejscowości">AZP-Kraków-44</td>
-					        <td aria-label="Nr stanowiska w obszarze AZP">AZP29</td>
-					        <td aria-label="Szczegóły"><a href="">Opis</a> <a href="">Mapa</a></td>
+					    <tr class="table__row">
+					        <td class="table__col" aria-label="Nazwa stanowiska">Nazwa 5</td>
+					        <td class="table__col" aria-label="Województwo">Małopolskie</td>
+					        <td class="table__col" aria-label="Powiat">Krakowski</td>
+					        <td class="table__col" aria-label="Gmina">Kraków</td>
+					        <td class="table__col" aria-label="Miasto">Kraków</td>
+					        <td class="table__col" aria-label="AZP">40 - 02</td>
+					        <td class="table__col" aria-label="Nr stanowiska w miejscowości">AZP-Kraków-44</td>
+					        <td class="table__col aria-label="Nr stanowiska w obszarze AZP">AZP29</td>
+					        <td class="table__col" aria-label="Szczegóły"><a href="">Opis</a> <a href="">Mapa</a></td>
 					    </tr>
-					    <tr>
-					        <td aria-label="Nazwa stanowiska">Nazwa 6</td>
-					        <td aria-label="Województwo">Podkarpackie</td>
-					        <td aria-label="Powiat">Lubaczowksi</td>
-					        <td aria-label="Gmina">Lubaczów</td>
-					        <td aria-label="Miasto">Cieszanów</td>
-					        <td aria-label="AZP">4 - 1</td>
-					        <td aria-label="Nr stanowiska w miejscowości">Cieszanów-20</td>
-					        <td aria-label="Nr stanowiska w obszarze AZP">AZP21</td>
-					        <td aria-label="Szczegóły"><a href="">Opis</a> <a href="">Mapa</a></td>
+					    <tr class="table__row">
+					        <td class="table__col" aria-label="Nazwa stanowiska">Nazwa 6</td>
+					        <td class="table__col" aria-label="Województwo">Podkarpackie</td>
+					        <td class="table__col" aria-label="Powiat">Lubaczowksi</td>
+					        <td class="table__col" aria-label="Gmina">Lubaczów</td>
+					        <td class="table__col" aria-label="Miasto">Cieszanów</td>
+					        <td class="table__col" aria-label="AZP">4 - 1</td>
+					        <td class="table__col" aria-label="Nr stanowiska w miejscowości">Cieszanów-20</td>
+					        <td class="table__col" aria-label="Nr stanowiska w obszarze AZP">AZP21</td>
+					        <td class="table__col" aria-label="Szczegóły"><a href="">Opis</a> <a href="">Mapa</a></td>
 					    </tr>
-					    <tr>
-					        <td aria-label="Nazwa stanowiska">Nazwa 7</td>
-					        <td aria-label="Województwo">Podkarpackie</td>
-					        <td aria-label="Powiat">Lubaczowksi/td>
-					        <td aria-label="Gmina">Lubaczów</td>
-					        <td aria-label="Miasto">Lubaczów</td>
-					        <td aria-label="AZP">4 - 2</td>
-					        <td aria-label="Nr stanowiska w miejscowości">Lubaczów-21</td>
-					        <td aria-label="Nr stanowiska w obszarze AZP">AZP22</td>
-					        <td aria-label="Szczegóły"><a href="">Opis</a> <a href="">Mapa</a></td>
+					    <tr class="table__row">
+					        <td class="table__col" aria-label="Nazwa stanowiska">Nazwa 7</td>
+					        <td class="table__col" aria-label="Województwo">Podkarpackie</td>
+					        <td class="table__col" aria-label="Powiat">Lubaczowksi</td>
+					        <td class="table__col" aria-label="Gmina">Lubaczów</td>
+					        <td class="table__col" ria-label="Miasto">Lubaczów</td>
+					        <td class="table__col" aria-label="AZP">4 - 2</td>
+					        <td class="table__col" aria-label="Nr stanowiska w miejscowości">Lubaczów-21</td>
+					        <td class="table__col aria-label="Nr stanowiska w obszarze AZP">AZP22</td>
+					        <td class="table__col" ria-label="Szczegóły"><a href="">Opis</a> <a href="">Mapa</a></td>
 					    </tr>
     				</tbody>
 				</thead>
