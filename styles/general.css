@@ -1,8 +1,10 @@
 :root {
 	--main-font-color: #393939;
 	--main-content-bg: #E5E5E5;
-	--large-btn-color: #ff7934;
+	--main-secondary-color: #6760b9;
 	--main-neutral-color: #ffffff;
+	--large-btn-color: #ff7934;
+	--teritoriary-color: #a5a5a5;
 }
 body {
 	font-family: 'Poppins', sans-serif;
@@ -93,4 +95,18 @@ h6 {
 }
 .lang-btn {
 	margin: 0 0 0 5px;
+}
+.lang-btn,
+.search-btn,
+.pagination__prev,
+.pagination__next,
+.pagination__item,
+.panel__list-btn {
+	color: var(--teritoriary-color);
+}
+.lang-btn--active,
+.pagination__item--active,
+.panel__list-btn--active{
+	color: var(--main-secondary-color);
+	font-weight: 700;
 }
