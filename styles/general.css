@@ -33,7 +33,9 @@ h6 {
 	padding: 25px;
 	-webkit-box-shadow: 2px 0px 64px -16px rgba(0,0,0,0.75);
 	box-shadow: 2px 0px 50px -16px rgba(0,0,0,0.75);
+	background: #fff;
 	z-index: 9;
+	transition: .7s;
 }
 .panel__logo {
 	max-width: 250px;
@@ -129,6 +131,13 @@ h6 {
 @media screen and (max-width: 980px) {
 	.mobile-menu {
 		display: block;
+	}
+	.panel--hidden {
+		position: absolute;
+	    left: -2000px;
+	}
+	.js-panel--show {
+		left: 0;
 	}
     body {
 	font-size: 10px;
