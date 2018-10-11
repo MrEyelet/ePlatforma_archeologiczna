@@ -55,6 +55,9 @@ h6 {
 .panel__list-item:last-of-type {
 	margin-bottom: 120px;
 }
+.hamburger__container {
+	display: none;
+}
 .main-content {	
 	background: #efefef;
 	padding: 0 25px;
@@ -132,7 +135,7 @@ h6 {
 	font-weight: 700;
 }
 @media screen and (max-width: 980px) {
-	.mobile-menu {
+	.hamburger__container {
 		display: block;
 	}
 	.panel--hidden {
@@ -176,7 +179,7 @@ h6 {
 	    top: 0;
 	    left: 0;
 	    right: 0;
-	    padding: 50px;
+	    padding: 30px;
 	    z-index: 9;
 	}
 	.main-content {
@@ -189,9 +192,17 @@ h6 {
 @media screen and (max-width: 400px) {
 	.panel {
 		min-width: 200px;
+		margin: 145px 0 0 0;
 	}
 	.panel__logo {
 		max-width: 200px;
+	}
+	.link-btn,
+	.hamburger__container {
+		margin: 0 0 0 10px
+	}
+	.main-content {
+		margin: 150px 0 0 0;
 	}
 	.main-content__head {
 		-webkit-box-orient: vertical;
@@ -203,10 +214,6 @@ h6 {
    	 	-webkit-align-items: flex-end;
    	 	    -ms-flex-align: end;
    	 	        align-items: flex-end;
-	}
-	.link-btn,
-	.mobile-menu {
-		margin: 0 0 0 10px
 	}
 	.main-content__heading {
 		font-size: 18px;
