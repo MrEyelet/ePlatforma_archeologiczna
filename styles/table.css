@@ -1,0 +1,91 @@
+.table {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+    font-size: 12px;
+    border-radius: 16px;
+    -webkit-box-shadow:  0px 0px 64px -16px rgba(0,0,0,0.75);
+            box-shadow:  0px 0px 64px -16px rgba(0,0,0,0.75);
+}
+.table__body .table__row:hover{
+    background: #efefef;
+}
+.table__head .table__row {
+  background: #6760b9;
+  color: #ffffff;
+  border: none;
+}
+.table th,
+.table__col {
+    position: relative;
+    vertical-align: middle;
+    padding: 15px 5px;
+    text-align: center;
+}
+.table th {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  padding: 50px 5px;
+}
+.table__row {
+    background: #ffffff;
+    border: 1px solid #efefef;
+    padding: 35px;
+}
+.sort-btn {
+    position: absolute;
+    left: 50%;
+    top: -16px;
+    background: #ffffff;
+    padding: 8px 10px;
+    border-radius: 100px;
+    -webkit-box-shadow:  0px 0px 31px -5px rgba(0,0,0,0.75);
+    box-shadow:  0px 0px 31px -5px rgba(0,0,0,0.75);
+    transition: .3s;
+    -webkit-transform: translateX(-50%) rotate(90deg);
+        -ms-transform: translateX(-50%) rotate(90deg);
+            transform: translateX(-50%) rotate(90deg)
+}
+.sort-btn--current {
+  background: #6760b9;
+}
+.sort-btn--hover:hover {
+  transform:translateX(-50%) rotate(270deg);
+  box-shadow: none;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+    .table {
+        -webkit-box-shadow: none;
+                box-shadow: none;
+        border: 0;
+    }
+    .table__head {
+      display: none;
+    }
+    .table__row {
+        display: block;
+        border-top: 10px solid #6760b9;
+        margin-bottom: 50px;
+        -webkit-box-shadow: 0px 0px 64px -16px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 64px -16px rgba(0,0,0,0.75);
+    }
+    .table__row img {
+      display: none;
+    }
+    .table__col {
+        border-bottom: 1px solid #efefef;
+        display: block;
+        text-align: right;
+    }
+    .table__col::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        color: #6760b9;
+    }
+    .table__col:last-child {
+        border-bottom: 0;
+    }
+}
