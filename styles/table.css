@@ -54,12 +54,6 @@
   box-shadow: none;
   cursor: pointer;
 }
-@media screen and (max-width: 980px) {
-    .panel {
-      position: absolute;
-      left: -2000px;
-    }
-}
 @media screen and (max-width: 768px) {
     .table {
         -webkit-box-shadow: none;
