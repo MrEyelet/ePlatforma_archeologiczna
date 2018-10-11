@@ -6,7 +6,8 @@
     border-radius: 16px;
     -webkit-box-shadow:  0px 0px 64px -16px rgba(0,0,0,0.75);
             box-shadow:  0px 0px 64px -16px rgba(0,0,0,0.75);
-}.table__body .table__row:hover{
+}
+.table__body .table__row:hover{
     background: #efefef;
 }
 .table__head .table__row {
@@ -47,7 +48,7 @@
             transform: translateX(-50%) rotate(90deg)
 }
 .sort-btn--current {
-  background: #261d92;
+  background: #6760b9;
 }
 .sort-btn--hover:hover {
   transform:translateX(-50%) rotate(270deg);
