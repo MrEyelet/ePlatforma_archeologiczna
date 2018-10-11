@@ -170,16 +170,17 @@ h6 {
 	}
 }
 @media screen and (max-width: 768px) {
-	.panel {
-		margin: 80px 0 0 0;
+	.panel__logo {
+		margin-top: 80px;
 	}
 	.main-content__head {
 		position: fixed;
-	    background: #fff;
-	    top: 0;
+		top: 0;
 	    left: 0;
 	    right: 0;
+	    background: #fff;
 	    padding: 30px;
+	    border-bottom: 2px solid #6760b9;
 	    z-index: 9;
 	}
 	.main-content {
@@ -192,10 +193,10 @@ h6 {
 @media screen and (max-width: 400px) {
 	.panel {
 		min-width: 200px;
-		margin: 145px 0 0 0;
 	}
 	.panel__logo {
 		max-width: 200px;
+		margin-top: 145px;
 	}
 	.link-btn,
 	.hamburger__container {
