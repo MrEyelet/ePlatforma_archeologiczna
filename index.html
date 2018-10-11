@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,10 +9,11 @@
 	<link rel="stylesheet" type="text/css" href="styles/general.css">
 	<link rel="stylesheet" type="text/css" href="styles/table.css">
 	<link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,700,700i" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
 	<div class="outer-container fx-container">
-		<aside class="panel">
+		<aside class="panel panel--hidden">
 			<nav>
 				<img class="panel__logo" src="img/logo_archeologia.svg" alt="" title="">
 			</nav>
@@ -63,7 +64,7 @@
 						<th scope="col">Szczegóły</th>
 					</tr>
 				</thead>
-				<tbody>
+				<tbody class="table__body">
 					<tr class="table__row">
 					    <td class="table__col" data-label="Nazwa stanowiska">Nazwa 1<img class="sort-btn sort-btn--current sort-btn--hover" src="img/icons/ic_chevron.svg"></td>
 					    <td class="table__col" data-label="Województwo">Lubuskie<img class="sort-btn sort-btn--hover" src="img/icons/ic_chevron.svg"></td>
@@ -150,5 +151,6 @@
 			</div>
 		</main>
 	</div>
+	<script src="script.js" type="text/javascript"></script>
 </body>
 </html>
