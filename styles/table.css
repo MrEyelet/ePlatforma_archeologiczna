@@ -1,36 +1,28 @@
-:root {
-  --table-header-bg: #6760b9;
-  --table-header-font-color: #ffffff;
-  --table-border-color: #ddd;
-  --table-shadow: 0px 0px 64px -16px rgba(0,0,0,0.75);
-  --sort-btn-shadow: 0px 0px 31px -5px rgba(0,0,0,0.75);;
-}
 .table {
     border-collapse: collapse;
     width: 100%;
     table-layout: fixed;
     font-size: 12px;
     border-radius: 16px;
-    -webkit-box-shadow: var(--table-shadow);
-            box-shadow: var(--table-shadow);
+    -webkit-box-shadow: 0px 0px 64px -16px rgba(0,0,0,0.75);
+            box-shadow: 0px 0px 64px -16px rgba(0,0,0,0.75);
 }
-
 .table__row img {
     position: absolute;
     left: 50%;
     top: -16px;
-    background: var(--table-header-font-color);
+    background: #ffffff;
     padding: 8px 10px;
     border-radius: 100px;
-    -webkit-box-shadow: var(--sort-btn-shadow);
-            box-shadow: var(--sort-btn-shadow);
+    -webkit-box-shadow: 0px 0px 31px -5px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 31px -5px rgba(0,0,0,0.75);
     -webkit-transform: translateX(-50%) rotate(90deg);
         -ms-transform: translateX(-50%) rotate(90deg);
             transform: translateX(-50%) rotate(90deg);
 }
 .table__head .table__row {
-  background: var(--table-header-bg);
-  color: var(--table-header-font-color);
+  background: #6760b9;
+  color: #ffffff;
   border: none;
 }
 .table th,
@@ -47,8 +39,8 @@
   padding: 50px 5px;
 }
 .table__row {
-    background: var(--table-header-font-color);
-    border: 1px solid var(--table-border-color);
+    background: #ffffff;
+    border: 1px solid #ddd;
     padding: 35px;
 }
 @media screen and (max-width: 980px) {
@@ -68,7 +60,7 @@
     }
     .table__row {
         display: block;
-        border-top: 10px solid var(--table-header-bg);
+        border-top: 10px solid #6760b9;
         margin-bottom: 50px;
         -webkit-box-shadow: 0px 0px 64px -16px rgba(0,0,0,0.75);
         box-shadow: 0px 0px 64px -16px rgba(0,0,0,0.75);
@@ -77,8 +69,8 @@
       display: none;
     }
     .table__col {
+        border-bottom: 1px solid #ddd;
         display: block;
-        border-bottom: 1px solid var(--table-border-color);
         text-align: right;
     }
     .table__col::before {
