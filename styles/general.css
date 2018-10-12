@@ -2,6 +2,7 @@ body {
 	font-family: 'Poppins', sans-serif;
 	font-size: 14px;
 	color: #393939;
+	background: #efefef;
 }
 h1 {
 	font-size: 24px;
@@ -20,9 +21,6 @@ h5 {
 }
 h6 {
 	font-size: 12px;
-}
-.mobile-menu {
-	display: none;
 }
 .outer-container {
 	min-height: 100vh;
@@ -83,56 +81,6 @@ h6 {
 .icon {
 	margin: 0 10px;
 }
-.link-btn {
-	margin: 0 10px 0 0;
-}
-.btn {
-	display: block;
-    text-align: center;
-    border-radius: 100px;
-    border: 1px solid #ff7934;
-    -webkit-transition: .3s;
-    -o-transition: .3s;
-    transition: .3s;
-}
-.btn__large {
-	padding: 0 20px;
-    margin: 25px 0;
-    line-height: 45px;
-    background: #ff7934;
-    color: #ffffff;
-    -webkit-box-shadow: 0px 0px 40px -8px rgba(0,0,0,0.75);
-	box-shadow: 0px 0px 40px -8px rgba(0,0,0,0.75);
-}
-.btn__large--hover:hover {
-	background: transparent;
-    color: #ff7934;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-}
-.btn__small {
-	padding: 6px 14px;
-	margin: 6px auto;
-	color: #ff7934;
-	background: transparent;
-}
-.btn__small--hover:hover {
-	background: #ff7934;
-	color: #ffffff;
-}
-.link-btn {
-	color: #a5a5a5;
-	-webkit-transition: .3s;
-	-o-transition: .3s;
-	transition: .3s;
-}
-.link-btn--hover:hover {
-	color: #ff7934;
-}
-.link-btn--active {
-	color: #6760b9;
-	font-weight: 700;
-}
 @media screen and (max-width: 980px) {
 	.hamburger__container {
 		display: block;
@@ -187,13 +135,6 @@ h6 {
 	}
 	.main-content {
 		margin: 100px 0 0 0;
-	}
-	.btn__small {
-		display: inline-block;
-	}
-	.pagination__prev.link-btn,
-	.pagination__next.link-btn {
-    	margin: 0 5px;
 	}
 }
 @media screen and (max-width: 400px) {
