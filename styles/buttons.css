@@ -68,7 +68,6 @@
   box-shadow: none;
   cursor: pointer;
 }
-
 @media screen and (max-width: 768px) {
 	.btn__small {
 		display: inline-block;
